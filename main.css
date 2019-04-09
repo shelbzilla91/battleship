@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: black;
 
 }
@@ -8,15 +8,16 @@ div#board{
     height:925px;
     margin:auto;
     background: url("images/board.jpg") no-repeat;
+    border-color: 5px solid black;
 }
 div#message{
     position:absolute;
     top:0px;
-    left:opx;
+    left:0px;
     color:rgb(80,170,20);
 }
 .hit{
-    background:url("") no-repeat center center;
+    background:url("images/ship\ \(1\).png") no-repeat center center;
 }
 .miss{
     background:url("images/miss.png") no-repeat center center;
@@ -44,4 +45,70 @@ form input {
     border-color:rgb(80,170,20);
     font-size: 1em;
 
+} */
+body {
+	background: black;
+}
+
+/*battleship board display*/
+div#board {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url('images/board.jpg');
+}
+
+/*battleship message*/
+h1#messageArea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgb(83, 175, 19);
+}
+
+/*battleship table*/
+table {
+	position: absolute;
+	left: 173px;
+	top: 98px;
+	border-spacing: 0;
+}
+
+/*battleship table rows*/
+tr {
+	height: 97px;
+}
+/*battleship table data cell*/
+td {
+	width: 96px;
+	height: 94px;
+}
+
+/*battleship form*/
+form {
+	position: absolute;
+	top: 25px;
+	right: 0;
+	padding: 10px;
+	background-color: rgb(83, 175, 19);
+	z-index: 100;
+}
+
+/*battleship form input*/
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+.form-control {
+	width: 70% !important;
+	margin-right: 5%;
+}
+/*hit or miss*/
+.hit {
+	background: url('images/ship\ \(1\).png') no-repeat center center;
+}
+.miss {
+	background: url('/images/miss.png') no-repeat center center;
 }
